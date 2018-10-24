@@ -1,0 +1,14 @@
+{
+  "name": "Straya m8",
+  "version": "0.5",
+  "manifest_version": 2,
+  "description": "Yeah … nah",
+  "icons": { "128": "straya.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://twitter.com/*","https://twitter.com/*",
+      		  "http://*.twitter.com/*", "https://*.twitter.com/*" ],
+      "js": ["straya.user.js"]
+    }
+  ]
+}
